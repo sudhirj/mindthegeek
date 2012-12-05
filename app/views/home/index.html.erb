@@ -1,0 +1,18 @@
+<div>
+  <h2>Workshops and Resources by and for Programmers</h2>
+</div>
+<div>
+  <div class="row">
+    <div class="span6">
+      <h3>Workshops</h3>
+      <p>
+        We've prepared the following workshops and are ready to run them in Chennai and Bangalore. All sessions happen over one day (usually a Saturday) and include Lunch and Tea. 
+      </p>
+      <p>Vote for the workshop you want to attend and we'll send you an email when dates are fixed and we have a venue set up.</p>
+    </div>
+    <div class="span6">
+      <% for workshop in @workshops %>
+      <%=render workshop%>
+      <% end %></div>
+  </div>
+</div>

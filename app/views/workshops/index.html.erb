@@ -1,0 +1,10 @@
+<div id="all_workshops">
+  <% for workshop in @workshops %>
+  <div class="row">
+    <div class="span6 name">
+        <a><%= workshop.name%></a>
+    </div>
+    <div class="span6"><%= workshop.description%></div>    
+  </div>  
+  <% end %>
+</div>
