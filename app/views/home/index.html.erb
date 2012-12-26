@@ -1,18 +1,25 @@
-<div>
-  <h2>Workshops by and for Programmers</h2>
-</div>
-<div>
-  <div class="row">
-    <div class="span6">
-      <h3>Workshops</h3>
-      <p>
-        We've prepared the following workshops and are ready to run them in Chennai and Bangalore. All sessions happen over one day (usually a Saturday) and include Lunch and Tea. 
-      </p>
-      <p>Vote for the workshop you want to attend and we'll send you an email when dates are fixed and we have a venue set up.</p>
+<div class="hero">
+    <div class="container">
+        <h2>Programmers are best taught by other programmers.</h2>
     </div>
-    <div class="span6">
-      <% for workshop in @workshops %>
-      <%=render workshop%>
-      <% end %></div>
-  </div>
+</div>
+<div class="container content">
+    <div class="row">
+        <div class="span6">
+            <h3>Workshops</h3>
+
+            <p>Mind the Geek offers a series of Workshops conducted by top-notch programmers who love what
+                they do. With small batch sizes and an intimate environment, they're a great way to learn something new.
+            </p>
+
+            <p>These workshops are meant for self-motivated personal development and are priced accordingly. if you'd
+                like to organize a corporate workshop, please contact
+                <a href="mailto:sudhir.j@mindthegeek.com">sudhir.j@mindthegeek.com</a></p>
+        </div>
+        <div class="span6">
+            <% for workshop in @workshops %>
+                <%= render workshop %>
+            <% end %>
+        </div>
+    </div>
 </div>

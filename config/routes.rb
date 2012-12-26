@@ -1,7 +1,4 @@
 Mtg::Application.routes.draw do
-  resources :players
-
-
   resources :venues
 
 
