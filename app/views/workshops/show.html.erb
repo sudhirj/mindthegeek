@@ -1,8 +1,9 @@
+<div class="container">
 <div class="row">
   <div class="span7">
-    <h3>
+    <h2>
       <a href="<%=url_for @workshop%>"><%=@workshop.name%></a>
-    </h3>
+    </h2>
     <p>
       <%=@workshop.description%></p>
     <h5>Prerequisites:</h5>
@@ -11,11 +12,10 @@
     <%= markdown(@workshop.details)%>
   </div>
   <div class="span5">
-    <h4>Calendar</h4>
+    <h2>Calendar</h2>
     <p>There are no upcoming dates for this workshop. Vote for it to bring it to your city!</p>
-    <p>The more votes we have the easier it gets to plan where and when to hold this workshop next.</p>
-    <br/>
-    <a href="" class="btn">sign in to vote &rarr;</a> 
-    <p>(we use your email for signups; and we have zero tolerance for spam)</p>
+    <p>The more votes we have the easier it gets to plan where and when to hold this workshop next.</p>    
+    <a href="" class="btn">sign in to vote &rarr;</a>     
   </div>
+</div>
 </div>

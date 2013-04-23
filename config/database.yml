@@ -2,8 +2,10 @@ development:
   adapter: postgresql
   database: mtg_development
   host: localhost
+  username: sudhirjonathan
 
 test:
   adapter: postgresql
   database: mtg_test
   host: localhost
+  username: sudhirjonathan
