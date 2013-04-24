@@ -4,6 +4,7 @@ class WorkshopsController < ApplicationController
   end
 
   def index
-    @workshops = Workshop.all.order('rank desc')
+    # @workshops = Workshop.order('rank desc')
+    redirect_to root_url
   end
 end

@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @workshops = Workshop.all
+    @workshops = Workshop.order('rank desc')
   end
 end
