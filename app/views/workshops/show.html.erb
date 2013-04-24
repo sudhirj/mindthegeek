@@ -13,7 +13,10 @@
   </div>
   <div class="span5">
     <h2>Calendar</h2>
-    <%= markdown(@workshop.calendar)%>
+    <%= markdown(@workshop.calendar || '')%>
+    <%=render 'sharing'%>    
   </div>
 </div>
 </div>
+
+<%content_for :title do%><%=@workshop.name%> : <%end%>

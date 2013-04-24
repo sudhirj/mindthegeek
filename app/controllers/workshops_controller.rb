@@ -4,6 +4,6 @@ class WorkshopsController < ApplicationController
   end
 
   def index
-    @workshops = Workshop.all
+    @workshops = Workshop.all.order('rank desc')
   end
 end
