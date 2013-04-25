@@ -34,8 +34,10 @@ header {
     font-weight: 400;
     color: white;
     opacity: 0.9;
-    @include responsive-sizing(1.618rem);
-
+    @include responsive-sizing(1.618rem);    
+  }
+  a:hover {
+    text-decoration: none;
   }
   @include full-width;
 }
@@ -89,8 +91,11 @@ div.workshop {
 }
 
 .sharing {
-  margin-top: 1.618rem;
+  margin: 1.618rem 0;
 }
 .text {
   margin-bottom: 1.618rem;
+  img {
+    max-width: 100%;
+  }
 }

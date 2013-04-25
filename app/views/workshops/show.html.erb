@@ -5,10 +5,8 @@
       <a href="<%=url_for @workshop%>"><%=@workshop.name%></a>
     </h2>
     <div class="text"><%= markdown(@workshop.description)%></div>
-    <h5>Prerequisites:</h5>
-    <div class="text"><%= markdown(@workshop.requisites)%></div>
-    <h5>Details:</h5>
     <div class="text"><%= markdown(@workshop.details)%></div>
+    <hr/>
   </div>
   <div class="span5">
     <h2>Calendar</h2>
